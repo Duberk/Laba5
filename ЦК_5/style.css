@@ -1,0 +1,146 @@
+body {
+    background-color:rgb(171, 137, 92);
+}
+h1, h2 {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(114, 24, 24);
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+p {
+    font-size: 15px;
+    color: rgb(162, 39, 39);
+    line-height: 1.5;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+ul, ol {
+    font-size: 15px;
+    color: rgb(113, 14, 14);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+a {
+    color: rgb(173, 17, 48);
+    text-decoration: none;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+}
+.content-left {
+    flex: 1;
+    background-color:rgb(238, 146, 112);
+    padding: 30px;
+    border-radius: 30px;
+    margin-right: 30px;
+}
+.content-right {
+    flex: 1;
+    background-color:rgb(238, 146, 112);
+    padding: 30px;
+    border-radius: 30px;
+    text-align: center;
+}
+.content-right img {
+    max-width: 500px;
+    max-height: 500px;
+}
+.align-right{
+    border: solid;
+    border-color: #F5DEB3;
+    border-radius: 40px;
+    text-align: right;
+    width:100%;
+    background: #F5DEB3;
+}
+.container{
+    background-color: #F5DEB3;
+    height:500px;
+}
+.block{
+    margin-left: auto;
+    margin-right: auto;
+    border: solid;
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+}
+.catblock{
+    margin-left: auto;
+    margin-right: auto;
+    border: solid;
+    height: 224px;
+    width: 224px;
+}
+.container-2{
+    background-color: #F5DEB3;
+    height:500px;
+}
+.block-2{
+    margin-left: auto;
+    margin-right: auto;
+    border: solid;
+    height: 200px;
+    width: 200px;
+    background-color: red;
+}
+.container-3{
+    background-color: #F5DEB3;
+    border:solid;
+    border-radius:2px;
+    display: flex;    
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.block-3{
+    background-color: green;
+    display: flex; 
+    margin: auto;
+    margin-top:10px;
+    height: 200px;
+    width: 200px;
+}
+.container-4{
+    position: relative;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+.elements{
+    position: absolute;  
+    width: 100px;  
+    height: 100px;  
+    border: 5px solid transparent;
+}
+.element-1{
+    top: 30px; 
+    left: 30px; 
+    width: 100px; 
+    height: 100px; 
+    border: 3px solid red; 
+}
+.element-2{
+    top: 100px; 
+    left: 100px; 
+    width: 100px; 
+    height: 100px; 
+    border: 3px solid blue;
+}
+.element-3{
+    top: 170px; 
+    left: 170px; 
+    width: 100px; 
+    height: 100px; 
+    border: 3px solid green; 
+}
+.position-fixed{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}

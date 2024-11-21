@@ -1,0 +1,103 @@
+<html>
+    <header class="align-right" href="laba2.html" href="page2.html" href="table.html">
+        <div class="header" style="margin-right: 5%;">
+            <a href="laba2.html">Основаная страница</a>
+            <a href="page2.html">Позиционирование элемента</a>
+            <a href="table.html">Таблица</a>
+        </div>
+    </header>
+<head>
+        <link href="table.css" rel="stylesheet">
+        <title></title>
+</head>
+<body class="colorBack">
+    <form id="form">
+        <div class="contentRight">
+            <div>
+                <label for="fnum">№</label><br>
+                <input type="text" id="fnum" name="fnum" value=""><br>
+                <label for="pil1">Столбец 1</label><br>
+                <input type="text" id="pil1" name="pil1" value=""><br>
+                <label for="pil2">Столбец 2</label><br>
+                <input type="text" id="pil2" name="pil2" value=""><br>
+                <label for="pil3">Столбец 3</label><br>
+                <input type="text" id="pil3" name="pil4" value=""><br>
+                <input type="submit" value="Отправить" style="margin-top: 20px; padding: 5px;" onclick="add()">
+            </div>
+        </div>
+    </form>
+    <script>
+        document.getElementById('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const fnum = this.fnum.value;
+            const pil1 = this.pil1.value;
+            const pil2 = this.pil2.value;
+            const pil3 = this.pil3.value;
+
+            const newRow = document.createElement('tr');
+            const fnumCell = document.createElement('td');
+            const pil1Cell = document.createElement('td');
+            const pil2Cell = document.createElement('td');
+            const pil3Cell = document.createElement('td');
+
+            fnumCell.textContent = fnum;
+            pil1Cell.textContent = pil1;
+            pil2Cell.textContent = pil2;
+            pil3Cell.textContent = pil3;
+
+            newRow.appendChild(fnumCell);
+            newRow.appendChild(pil1Cell);
+            newRow.appendChild(pil2Cell);
+            newRow.appendChild(pil3Cell);
+
+            newRow.classList.add('colorBlue');
+
+            document.querySelector('#dataTable tbody').appendChild(newRow);
+
+            this.reset();
+        });
+    </script>
+    <div>
+        <table id=DataTable style="width: 70%;" class="table">
+            <caption class="textSize">Таблица</caption>
+                <tr class="colorHead" style="height: 70px;">
+                  <th style="width:50px;">№</th>
+                  <th>Столбец 1</th>
+                  <th>Столбец 2</th>
+                  <th>Столбец 3</th>
+                </tr>
+                <tr class="colorLine">
+                  <td >Строка 1</td>
+                  <td>1 1</td>
+                  <td>1 2</td>
+                  <td>1 3</td>
+                </tr>
+                <tr class="colorRed">
+                  <td>Строка 2</td>
+                  <td>2 1</td>
+                  <td>2 2</td>
+                  <td>2 3</td>
+                </tr>
+                <tr class="colorBlue">
+                    <td>Строка 3</td>
+                    <td>3 1</td>
+                    <td>3 2</td>
+                    <td>3 3</td>
+                </tr>
+                <tr class="colorLine">
+                    <td>Строка 4</td>
+                    <td>4 1</td>
+                    <td>4 2</td>
+                    <td>4 3</td>
+                </tr>
+                <tr class="colorRed">
+                    <td>Строка 5</td>
+                    <td>5 1</td>
+                    <td>5 2</td>
+                    <td>5 3</td>
+                </tr>
+        </table>
+    </div>
+</body>
+</html>

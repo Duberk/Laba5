@@ -1,0 +1,43 @@
+.colorBack{
+    background-color:rgb(171, 137, 92);
+    color: #4B3C2A;
+}
+.align-right{
+    border: solid;
+    border-color: #F5DEB3;
+    border-radius: 40px;
+    text-align: right;
+    width:100%;
+    background: #F5DEB3;
+}
+.table{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.textSize{
+    font-size: 30px;
+}
+.table th, .table td {
+    border: 1px solid #000;
+    padding: 8px; 
+    text-align: center;
+}
+.colorHead{
+    background-color: #B29F85;
+}
+.colorRed{
+    background-color: #d87965 ;
+}
+.colorBlue{
+    background-color: #67add9;
+}
+.colorLine{
+    background-color: #9ac674 ;
+}
+.contentRight{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #c7a7a7; 
+    padding: 40px; 
+}
